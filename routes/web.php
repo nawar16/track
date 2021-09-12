@@ -17,12 +17,11 @@ Route::group(['middleware' => 'log.route'], function () {
     Route::get('/', function () {
         return view('welcome');
     });
-    Route::get('info', 'IpInfoController@lookup');
-    Route::get('hidden', function(){
-    $items = Log::all();
-    return view('table')->with('items', $items);
 });
-
+Route::get('info', 'IpInfoController@lookup');
+Route::get('hidden', function(){
+$items = Log::all();
+return view('table')->with('items', $items);
 });
 
 
