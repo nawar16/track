@@ -1,0 +1,14 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+database/ip2location/IP2PROXY-LITE-PX10.BIN
+database/ip2location/IP2PROXY-LITE-PX10.IPV6.CSV 
