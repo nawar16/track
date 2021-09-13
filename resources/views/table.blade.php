@@ -30,7 +30,7 @@
     <section class="row-alt">
       <div class="lead container">
 
-        <h1></h1>
+        <h1>Track Users</h1>
 
         <p></p>
 
@@ -41,21 +41,21 @@
 
     <section class="row">
       <div class="container">
-      <table>
-				<thead>
-					<tr>
-						<th style="text-align: center">USER</th>
-						<th style="text-align: center">DEVICE</th>
-						<th style="text-align: center">IP</th>
-            <th style="text-align: center">COUNTRY</th>
-            <th style="text-align: center">CITY</th>
-					</tr>
-				</thead>
-				<tbody>
+      <table class="styled-table">
+      <thead>
+        <tr>
+            <th>USER</th>
+						<th>DEVICE</th>
+						<th>IP</th>
+            <th>COUNTRY</th>
+            <th>CITY</th>
+        </tr>
+      </thead>
+      <tbody>
 					@if(isset($items))
 					@foreach($items as $i)
 					<tr>
-					    <th>{{$i['user_id']}}</th>
+					  <td>{{$i['user_id']}}</td>
 						<td>{{$i['device']}}</td>
 						<td>{{$i['ip']}}</td>
             <td>{{$i['country']}}</td>
@@ -64,13 +64,12 @@
 					@endforeach
 					@endif
 				</tbody>
-				<tfoot>
-				</tfoot>
-			</table>
-
+    </table>
 
       </div>
     </section>
+
+
 
     <!-- Footer -->
 
